@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>流行乐：为校园音乐人活动设计的社交APP</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="icon" href="./contents/icon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--End-->
+    <script>
+    fetch('https://v1.hitokoto.cn')
+        .then(function (res){
+        return res.json();
+        })
+        .then(function (data) {
+        var hitokoto = document.getElementById('hitokoto');
+        hitokoto.innerText = data.hitokoto;
+        })
+        .catch(function (err) {
+        console.error(err);
+        })
+    </script>
+
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+<!--这里是上方的留白，万一以后想加个导航什么的呢。。。。-->
+<header class="site-header container animated fadeInDown">
+	<div class="header-wrapper"></div>
+</header>
+
+<!-- 抬头 -->
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+		<div class="home-intro text-center">
+			<h2 class="welcome-title animated fadeInLeft">
+                流行乐<p>为校园音乐人活动设计的社交APP<br/>
+                </p>
+            </h2>
+			<p class="animated fadeInRight">
+                帮助更多刚起步的音乐人找到演出机会<br />
+                为更多精彩演出的招募和分享提供平台<br />
+                促进同地区乐队和独立音乐人的交流合作<br />
+            </p>
+		</div>
+
+        <div class="projects-holder">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="project-item">
+                        <video width="100%" height="auto" controls>
+                            <source src="contents/Project4/video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="border-bottom: 2px solid #46494f;"></div>
+        </div>
+    </div>
+</div>
+
+<!-- 需求和竞品 -->
+<div class="projects-header">
+    <h3 class="animated fadeInRight">
+        <div class = "container">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="welcome-title animated fadeInLeft">
+                    需求分析
+                </h2>
+            
+                <h3 class = "text-left">
+                    <p class="animated fadeInLeft">
+                        随着线下音乐产业的复苏和大学生素质教育的持续推进，越来越多的校园音乐人和乐队出现，
+                        同时在大学校园的各种活动中对于这些音乐团体的态度也更开放。
+                        但目前整个相关领域的信息整体而言相对闭塞，各个不同的团体之间几乎完全通过私交互相联系，
+                        还未能有效建立起有利于校园音乐发展乃至于最终中国新生代音乐发展的平台和机制。<br />
+                    </p>
+                </h3>
+            
+                <h2 class="welcome-title animated fadeInLeft">
+                    竞品分析
+                </h2>
+                    
+                <h2 class = "text-left">
+                    <p class="animated fadeInLeft">
+                        音乐软件的学生入驻功能<br />
+                    </p>
+                </h2>
+                <h3 class = "text-left">
+                    <p class="animated fadeInLeft">
+                        相比于成熟音乐软件学生入驻，“流行乐”更加由线下活动主导，具备大学生的社交圈性质，同时音乐发布是非常次要的功能考虑。<br />
+                    </p>
+                </h3>
+
+                <h2 class = "text-left">
+                    <p class="animated fadeInLeft">
+                        社交软件的推荐算法<br />
+                    </p>
+                </h2>
+                <h3 class = "text-left">
+                    <p class="animated fadeInLeft">
+                        由于社交软件不太具备专门性，因此即使使用推荐算法依然缺少信息的整理和发布，也不能够根据特殊功能设计相应的交互形式。<br />
+                    </p>
+                </h3>
+            </div>
+        </div>
+    </h3>
+</div>
+
+
+<div id="menu-container">
+    <div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br /><br /><br /><br />
+    </div>
+</div>
+
+<!-- 用户 -->
+<div class="projects-header">
+    <h3 class="animated fadeInRight">
+        <div class = "container">
+
+            <h2 class="welcome-title animated fadeInLeft">
+                用户群体<br /><br />
+            </h2>
+    
+            <div class = "row">
+
+                <div class="col-md-4 col-md-offset-1" >
+                    <img src = "contents/Project4/PC1.jpg" alto = "" style = "width: 100%">
+                </div>
+                <div class = "col-md-6">
+                    <h2 class = "text-left">
+                        <p class="animated fadeInLeft">
+                            组织演出的主办方<br />
+                        </p>
+                    </h2>
+                    <h3 class = "text-left">
+                        <p class="animated fadeInLeft">
+                            我希望这个平台能够分地区招募演出乐队，需要各个乐队作为整体的风格、演出经历、作品和联系方式。<br />
+                        </p>
+                    </h3>
+
+                    <h2 class = "text-left">
+                        <p class="animated fadeInLeft">
+                            乐队成员或者独立音乐人<br />
+                        </p>
+                    </h2>
+                    <h3 class = "text-left">
+                        <p class="animated fadeInLeft">
+                            爱好音乐和舞台，可能刚起步，演出信息和报名机会对我来说很重要，
+                            我需要信息的及时、全面，需要明确的报名方式、演出的基本信息或主办方的联系方式。<br />
+                        </p>
+                    </h3>
+
+                    <h2 class = "text-left">
+                        <p class="animated fadeInLeft">
+                            音乐爱好者<br />
+                        </p>
+                    </h2>
+                    <h3 class = "text-left">
+                        <p class="animated fadeInLeft">
+                            大学生，爱好音乐，刚刚开始音乐之旅，可能希望组织自己的乐队；
+                            我喜欢浏览别人的音乐作品，我希望这是一个广义上的社交平台，
+                            这样我可以和不同音乐风格出身和不同演出经历的人频繁地进行对话。<br />
+                        </p>
+                    </h3>
+                </div>
+            </div>  
+        </div>
+        
+    </h3>
+</div>
+
+
+<div id="menu-container">
+    <div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br /><br /><br /><br />
+    </div>
+</div>
+
+
+<!-- 信息结构 -->
+<div class="projects-header">
+    <h3 class="animated fadeInRight">
+        <div class = "container">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="welcome-title animated fadeInLeft">
+                    信息结构
+                    <br /><br />
+                </h2>
+                
+                <h2 class = "text-left">
+                    <p class="animated fadeInLeft">
+                        主界面：
+                            包含招募、动态和我的三个板块，其中招募为默认进入板块。<br />
+                    </p>
+                </h2>
+
+                <div class="project-item animated umScaleIn">
+                    <img src = "contents/Project4/IS1.png" alto = "" style = "width:100% img-responsive">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            招募：<br />
+                            用于查看目前正在招募音乐演出的活动，报名洽谈或者发布招募的模块
+                            <br />                         
+                        </a></h4>
+                    </div>
+                </div>
+
+                <div class="project-item animated umScaleIn">
+                    <img src = "contents/Project4/IS2.png" alto = "" style = "width:100% ">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            动态：<br />用于查看、搜索用户发布的动态以及演出直播，或者发布用户自己的新动态
+                            <br />                         
+                        </a></h4>
+                    </div>
+                </div>
+
+                <div class="project-item animated umScaleIn">
+                    <img src = "contents/Project4/IS3.png" alto = "" style = "width:100% ">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            我的：<br />
+                            用于用户本人的信息，包括头像、昵称、所在乐队、发布过的动态以及聊天界面等等<br />
+                            每个乐队均可拥有一个主页，乐队主页下可链接到其各个成员的主页，而每个成员主页均可链接其所在乐队主页
+                            <br />                         
+                        </a></h4>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </h3>
+</div>
+
+
+<div id="menu-container">
+    <div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br /><br /><br /><br />
+    </div>
+</div>
+
+
+<!-- 原型设计 -->
+<div class="projects-header">
+    <h3 class="animated fadeInRight">
+        <div class = "container">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="welcome-title animated fadeInLeft">
+                    原型设计
+                </h2>
+            </div>
+        </div>
+    </h3>
+</div>
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+    <div class = "row">
+        <div class = "col-md-4 col-md-offset-1 p-1 animated umScaleIn">
+            <div class = "project-item">
+                <img src = "contents/Project4/PD1.png" alt = "" style = "width:100% " class = "img-responsive">
+            </div>
+        </div>
+        <div class = "col-md-6">
+            <h3 class = "text-left">
+                <p class="animated fadeInLeft">
+                    整体采取深色调的界面设计，考虑到用户上传的视频或图片整体风格多样化并且舞台性较强，
+                    界面设计的色调设计目的是突出和提亮用户发布的内容，并且确保尽量适配用户发布内容的各种风格
+                    <br />
+                </p>
+            </h3>
+        </div>
+    </div>
+</div>
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+
+        <div class="row">
+            <div class="col-md-2 col-sm-2 p-2 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project4/PD2.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 p-3 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project4/PD3.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 p-4 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project4/PD4.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 p-5 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project4/PD5.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 p-6 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project4/PD6.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 p-7 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project4/PD7.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight">
+        <div class = "container">
+            <div class = "row">
+
+                <div class="col-md-5 col-md-offset-1" >
+                    <h3 class = "text-left">
+                        <p class="animated fadeInLeft">
+                            左侧三个界面（1~3）依次为主界面的招募、动态和我的界面。在数目较少不会影响用户体验的前提下，
+                            底部标签栏的图标选择轮转式排布，通过圆位移增强交互动感。
+                            同时，这与招募界面中一个招募项目的图片左右滑动和个人主页中展示窗口的图片左右滑动构成交互形式上的呼应。<br />
+                        </p>
+                </div>
+                <div class = "col-md-5">
+                    <h3 class = "text-left">
+                        <p class="animated fadeInLeft">
+                            右侧三个界面（4~6）以招募界面为例展示了一个具体的流程。从招募界面刷到项目后点击进入，
+                            有相关项目的图文介绍，在底部有收藏、转发、退出（不感兴趣）、举手（感兴趣）的四个图标。
+                            当我对项目有意象时，点击举手，可进入聊天界面进一步洽谈。<br />
+                        </p>
+                </div>
+
+            </div>  
+        </div>
+        
+    </h3>
+</div>
+
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+    <div class = "row">
+        <div class = "col-md-2 col-md-offset-2 p-1 animated umScaleIn">
+            <div class = "project-item">
+                <img src = "contents/Project4/PD8.png" alt = "" style = "width:100% " class = "img-responsive">
+            </div>
+        </div>
+        <div class = "col-md-2 p-2 animated umScaleIn">
+            <div class = "project-item">
+                <img src = "contents/Project4/PD9.png" alt = "" style = "width:100% " class = "img-responsive">
+            </div>
+        </div>
+        <div class = "col-md-4">
+            <h3 class = "text-left">
+                <p class="animated fadeInLeft">
+                    左侧两图分别是个人主页和乐队主页的情况。
+                    从个人主页可以链接到乐队主页，而乐队主页则会显示乐队成员头像，点击头像即跳转到个人主页。
+                    但个人主页而并非乐队主页是“我的”板块的默认，乐队主页可以由任意乐队成员编辑。
+                    <br />
+                </p>
+            </h3>
+        </div>
+    </div>
+</div>
+
+
+<div id="menu-container">
+    <div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br /><br /><br /><br />
+    </div>
+</div>
+
+<!-- 图标设计 -->
+<div class="projects-header">
+    <h3 class="animated fadeInRight">
+        <div class = "container">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="welcome-title animated fadeInLeft">
+                    图标设计
+                </h2>
+            </div>
+        </div>
+    </h3>
+</div>
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+
+        <div class="row">
+            <div class="col-md-5 col-sm-5 p-2 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project4/CD1.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            通过拼贴的方式将音符和歌唱的人像侧面组合起来<br />                         
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 p-3 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project4/CD2.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            流行乐的实际意思是“流行的音乐人”(trending musicians)<br />
+                            暗含了APP功能的介绍和我们对于用户的祝福<br />                         
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-4 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project4/CD3.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            黄金分割和黄金椭圆的运用<br />                         
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+
+<div id="menu-container">
+    <div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br /><br /><br /><br />
+    </div>
+</div>
+
+
+
+<!-- <div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br /><br /><br /><br />
+    </div>
+</div> -->
+
+<footer>
+    <div class="blog-header text-center">
+	<div class="row">
+		<div class="navigation__item">
+            <p><a href="../index.html">回到列表</a></p>
+			<!-- <p>Copyright &copy; 2020&nbsp;&nbsp;Company By&nbsp;&nbsp;<a href="https://www.oyyandwjw.xyz/">Chien_W</a>&nbsp;&nbsp;&nbsp;&nbsp;</p> -->
+		</div>
+	</div>
+</div>
+</footer>
+
+
+
+<!-- templatemo 421 raleway -->
+<span class="border-top"></span>
+<span class="border-left"></span>
+<span class="border-right"></span>
+<span class="border-bottom"></span>
+    <!-- 网易云音乐 -->
+    <!-- <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0 src="//music.163.com/outchain/player?type=0&id=4950890732&auto=1&height=0"></embed> -->
+</body>
+</html>

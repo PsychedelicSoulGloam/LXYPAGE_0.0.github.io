@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>波普跃迁：基于通识美育目的和色彩互动学方法的学生社区导视系统设计</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="icon" href="./contents/icon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--End-->
+    <script>
+    fetch('https://v1.hitokoto.cn')
+        .then(function (res){
+        return res.json();
+        })
+        .then(function (data) {
+        var hitokoto = document.getElementById('hitokoto');
+        hitokoto.innerText = data.hitokoto;
+        })
+        .catch(function (err) {
+        console.error(err);
+        })
+    </script>
+
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+<!--这里是上方的留白，万一以后想加个导航什么的呢。。。。-->
+<header class="site-header container animated fadeInDown">
+	<div class="header-wrapper"></div>
+</header>
+
+
+<!-- 抬头 -->
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+		<div class="home-intro text-center">
+			<h2 class="welcome-title animated fadeInLeft">
+                波普跃迁<p>基于通识美育目的和色彩互动学方法的学生社区导视系统设计<br/><br/><br/>
+                </p>
+            </h2>
+
+            <p class="animated fadeInRight">
+                利用导视系统图标作为媒介<br />
+                尝试构建色彩体系的自然学习法<br />
+            </p>
+		</div>
+
+        <div class="projects-holder">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-3">
+                    <div class="project-item">
+                        <img src = "contents/Project3/TP-1.png" alt = "">
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="project-item">
+                        <img src = "contents/Project3/TP-2.png" alt = "">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="project-item">
+                        <img src = "contents/Project3/TP2.jpg" alt = "">
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="border-bottom: 2px solid #46494f;"></div>
+        </div>
+    </div>
+</div>
+
+<!-- 需求分析和方法讨论 -->
+<div class="projects-header">
+    <h3 class="animated fadeInRight">
+        <div class = "container">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="welcome-title animated fadeInLeft">
+                    需求分析与方法讨论
+                </h2>
+            
+                <h3 class = "text-left">
+                    <p class="animated fadeInLeft">
+                        通识教育的书院或者院系往往作为当下大学中的重要改革试点方向，用于探索新时代下人才培养的新模式。
+                        在通识教育的框架下，美育成为一个重要的主题。对于艺术风格的把握和美术基础成为其培养环节中的重要一环。<br />
+                    </p>
+                    <p class="animated fadeInLeft">
+                        不同于传统的色彩教学方法，在《色彩互动学》中，
+                        Josef Albers提供了一种更为反学院派的、后现代的、但同时也是对于非从业者而言有效而且深刻的认知方法
+                        ————“透过经验认识色彩的表达方式，感受色彩的关联性”。
+                        这一方法正如书中前言所叙述的，“作为一种通识训练，可以培养观察及表达的能力”，
+                        也比传统的色彩训练媒介更加具有被观察和被欣赏的潜力。这一思路不仅直接用于该设计的用途开发，
+                        更启发了该设计的基础功能构想。<br />
+                    </p>
+                    <p class="animated fadeInLeft">
+                        因此，我们为学生社区设计了一套色彩可变的导视系统——波普跃迁，
+                        其灵感未源于学生社区应当具备的五光十色的浪漫气质，二十世纪六十年代以降光怪陆离的波普艺术，
+                        版画从线条发韧的形式，以及那些我们在欧洲的公共场所观察到的场景-德意志博物馆彩色的展厅路牌，
+                        赫尔辛格卡隆堡宫外的商场标识，和贯穿南北随处可见的街头涂鸦。<br />
+                    </p>
+                </h3>
+            
+                
+            </div>
+        </div>
+    </h3>
+</div>
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+
+        <div class="row">
+            <div class="col-md-8 col-sm-8 p-2 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project3/TP4.jpg" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            安迪·沃霍尔，《玛丽莲梦露》，1962<br />
+                        </a></h4>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class= "column">
+                <div class="col-md-3 col-sm-3 p-3 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="contents/Project3/TP5.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a class="tooltip-test" data-toggle="tooltip" >
+                                德意志博物馆标识，慕尼黑<br />                    
+                            </a></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-md-offset-1 col-sm-3 p-3 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="contents/Project3/TP7.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a class="tooltip-test" data-toggle="tooltip" >
+                                街头涂鸦<br />                         
+                            </a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
+<div id="menu-container">
+    <div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br /><br /><br /><br />
+    </div>
+</div>
+
+<!-- 原型设计 -->
+<div class="projects-header">
+    <h3 class="animated fadeInRight">
+        <div class = "container">
+
+            <h2 class="welcome-title animated fadeInLeft">
+                原型设计<br /><br />
+            </h2>
+
+            <div class="project-item animated umScaleIn">
+                <img src = "contents/Project3/PD1.jpg" alto = "" style = "width:100% img-responsive">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip" >
+                        建模尺寸及外观<br />                       
+                    </a></h4>
+                </div>
+            </div>
+    
+        </div>
+        
+    </h3>
+</div>
+
+<div class = "projects-header">
+    <div class="col-md-10 col-md-offset-1">
+        <h3 class = "text-left">
+            <p class="animated fadeInLeft">
+                ·纯粹的图案与人像为中心的构图思路——故事化叙事<br />
+                ·在一个长期成员固定的公共空间（学生社区）内，故事化场景的构图思路有助于场所的趣味化和社区共同体的记忆形成<br />
+            </p>
+        </h3>
+    </div>
+</div>
+    
+
+<div class="projects-holder">
+    <div class = "container">
+
+        <div class="row">
+            <div class="col-md-3 col-sm-3 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project3/PD6.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >饮水间<br /></a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-2 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project3/PD7.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip">讨论间<br /></a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-3 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project3/PD8.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >院长交流室<br /></a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-4 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project3/PD9.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip">库房<br /></a></h4>
+                    </div>
+                </div>
+            </div>
+            
+        </div> 
+
+        
+        <div class="row">
+            <div class="col-md-3 col-sm-3 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project3/PD2.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >朗读间<br /></a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-2 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project3/PD3.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip">卫生间<br /></a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-3 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project3/PD4.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >楼长办公室<br /></a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-4 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project3/PD5.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip">乐团教室<br /></a></h4>
+                    </div>
+                </div>
+            </div>
+            
+        </div> 
+    
+    </div>
+    
+</div>
+
+<div id="menu-container">
+    <div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br /><br /><br /><br />
+    </div>
+</div>
+
+
+<!-- 功能展示 -->
+<div class="projects-header">
+    <h3 class="animated fadeInRight">
+        <div class = "container">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="welcome-title animated fadeInLeft">
+                    主题性功能展示
+                    <br /><br />
+                </h2> 
+            </div>
+        </div>
+    </h3>
+</div>
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+    <div class = "col-md-10 col-md-offset-1">
+        <h2 class = "text-left">
+            <p class="animated fadeInLeft">
+                主题性功能示例1：敦煌配色<br />
+            </p>
+        </h2>
+        <h3 class = "text-left">
+            <p class="animated fadeInLeft">
+                敦煌的色彩搭配蕴含了中古时期的中国传统色彩美学，但是由于长期我国美术教学方体系的西方化，
+                传统色彩审美的传播和教育一直处于劣势。
+                国潮的出现从一定程度上唤起了人们对于传统美学的重视，但在其于现代用品的运用方面尚缺乏有效融合。
+                我们认为，色彩和图案优先具有被观看的属性，
+                因此现代图案和传统配色的重组以及学生社区的应用场景是进行下一步探索和审美培养的可行手段。<br />
+            </p>
+        </h3>
+
+    </div>
+</div>
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+
+        <div class="row">
+            <div class="col-md-2 col-sm-3 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project3/FE1.jpg" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            莫高窟154窟（中唐）<br />       
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-3 p-2 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project3/FE2.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-3 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project3/FE3.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            色彩序列与色块比例的写仿1<br />
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-4 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project3/FE4.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            色彩序列与色块比例的写仿2<br />
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+    <div class = "col-md-10 col-md-offset-1">
+        <h2 class = "text-left">
+            <p class="animated fadeInLeft">
+                主题性功能示例2：《色彩运动学》方法<br />
+            </p>
+        </h2>
+    </div>
+</div>
+
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+    <div class = "row">
+
+        <div class = "col-md-4 col-md-offset-1">
+            <h3 class = "text-left">
+                <p class="animated fadeInLeft">
+                    《色彩运动学》指出了一种通过观察来认识到色彩的作用方式、感受色彩关联性的方法。
+                    右侧分别表示了在贝哲德视觉假象和色彩间距转换的主题下如何运用平面视觉实现的案例。
+                    对于一个学生有诸多时间仔细观察的公共社区中的对象来说，这些媒介不失为一种良好的方式。
+                    <br />
+                </p>
+            </h3>
+        </div>
+
+
+        <div class = "col-md-3 p-1 animated umScaleIn">
+            <div class = "project-item">
+                <img src = "contents/Project3/FE5.png" alt = "" style = "width:100% " class = "img-responsive">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip" >
+                        贝哲德视觉假象：<br />
+                        左侧的条状粉色和音符的红色看上去颜色比右侧对应更深，后者看上去更亮。但事实上，分别是同样的粉色和红色。<br />                         
+                    </a></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class = "col-md-3 p-2 animated umScaleIn">
+            <div class = "project-item">
+                <img src = "contents/Project3/FE6.png" alt = "" style = "width:100% " class = "img-responsive">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip" >
+                        色彩间距转换：<br />
+                        可以通过色彩边界的锋利程度训练对于色彩间距的判断，容易发现左侧颜色较深，而右侧的色彩更呈现初朦胧感。<br />                         
+                    </a></h4>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+<div id="menu-container">
+    <div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br /><br /><br /><br />
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="blog-header text-center">
+	<div class="row">
+		<div class="navigation__item">
+            <p><a href="../index.html">回到列表</a></p>
+			<!-- <p>Copyright &copy; 2020&nbsp;&nbsp;Company By&nbsp;&nbsp;<a href="https://www.oyyandwjw.xyz/">Chien_W</a>&nbsp;&nbsp;&nbsp;&nbsp;</p> -->
+		</div>
+	</div>
+</div>
+</footer>
+
+
+
+<!-- templatemo 421 raleway -->
+<span class="border-top"></span>
+<span class="border-left"></span>
+<span class="border-right"></span>
+<span class="border-bottom"></span>
+    <!-- 网易云音乐 -->
+    <!-- <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0 src="//music.163.com/outchain/player?type=0&id=4950890732&auto=1&height=0"></embed> -->
+</body>
+</html>

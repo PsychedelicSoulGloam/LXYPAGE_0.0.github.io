@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>CoBa：心理模型理解预测</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="icon" href="./picture/icon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--End-->
+    <script>
+    fetch('https://v1.hitokoto.cn')
+        .then(function (res){
+        return res.json();
+        })
+        .then(function (data) {
+        var hitokoto = document.getElementById('hitokoto');
+        hitokoto.innerText = data.hitokoto;
+        })
+        .catch(function (err) {
+        console.error(err);
+        })
+    </script>
+
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+<!--这里是上方的留白，万一以后想加个导航什么的呢。。。。-->
+<header class="site-header container animated fadeInDown">
+	<div class="header-wrapper"></div>
+</header>
+
+<!-- 抬头 -->
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+		<div class="home-intro text-center">
+			<h2 class="welcome-title animated fadeInLeft">
+                CoBA<p>心理模型理解预测<br/><br/><br/>
+                </p>
+            </h2>
+
+            <p class="animated fadeInRight">
+                Understanding and Predicting the Mental Model<br />
+                on<br />
+                Evaluating AI Assistant’s Competence<br />
+
+            </p>
+		</div>
+
+        
+        <div class = "projects-holder">
+            <div class = "row">
+                <div class = "col-md-4 col-sm-4 animated umScaleIn">
+                    <div class="project-item">              
+                        <img src = "contents/Project1/VP1-1.png" alt = "" >
+                        <div class="overlay">
+                            <h4><a class="tooltip-test" data-toggle="tooltip">working scenario<br /></a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-md-4 col-sm-4 animated umScaleIn">
+                    <div class="project-item">              
+                        <img src = "contents/Project1/VP1-2.png" alt = "" >
+                        <div class="overlay">
+                            <h4><a class="tooltip-test" data-toggle="tooltip">working scenario<br /></a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-md-4 col-sm-4 animated umScaleIn">
+                    <div class="project-item">              
+                        <img src = "contents/Project1/VP1-3.png" alt = "" >
+                        <div class="overlay">
+                            <h4><a class="tooltip-test" data-toggle="tooltip">working scenario<br /></a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br /><br /><br /><br />
+    </div>
+</div>
+
+
+
+<!-- INTRODUCTION -->
+<div class="projects-header">
+    <h3 class="animated fadeInRight">
+        <div class = "container">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="welcome-title animated fadeInLeft">
+                    INTRODUCTION<br /><br /><br />
+                </h2>
+            
+                <h3 class = "text-left">
+                    <p class="animated fadeInLeft">
+                        在LLM时代，AI助手的能力正在接近人类助手。然而，它们的“黑箱”效应会放大。
+                        用户对助手执行特定命令的能力更加困惑。这种不确定性影响了人与 AI助手合作的效率和信任。
+                        为了了解个人如何发展对AI助手的认知，我们开始探索基本的心理模型。
+                        <br />
+                    </p>
+                </h3>
+
+                <h2 class = "text-left">
+                    <p class="animated fadeInLeft">
+                        ·我们提出了人们如何通过think aloud来研究和评估人工智能助理理解指令能力的心智模型；<br /><br />
+                        ·我们收集的认知数据揭示了用户心理模型机制的基本趋势和个性化特点；<br /><br />
+                        ·我们展示了一个完整的研究方法，用于检测和预测用户心理模型。
+                        <br />
+                    </p>
+                </h2>
+                            
+            </div>
+                
+            </div>
+        </div>
+    </h3>
+</div>
+
+<!-- <div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+    </div>
+</div> -->
+
+<div id="menu-container">
+    <div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br /><br /><br /><br />
+    </div>
+</div>
+
+<!-- METHOD -->
+<div class="projects-header">
+    <h3 class="animated fadeInRight">
+        <div class = "container">
+
+            <h2 class="welcome-title animated fadeInLeft">
+                METHOD<br /><br />
+            </h2>
+    
+        </div>
+        
+    </h3>
+</div>
+    
+
+<div class="projects-header">
+    <div class = "container">
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project1/MT1.png" alt="">
+                    <!-- <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >底盘与外壳进行组装<br /></a></h4>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <h2 class = "text-left">
+            <p class="animated fadeInLeft">
+                ·我们首先设计了一个头脑风暴会议，以收集广泛的AI助手命令，包括被试者作为用户自己业已实际使用的及其想象AI助手可以实现的命令
+                <br />
+            </p>
+        </h2>
+
+
+        
+        <div class="row">
+            <div class="col-md-12 col-sm-12 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project1/MT2.png" alt="">
+                    <!-- <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >底盘与外壳进行组装<br /></a></h4>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <h2 class = "text-left">
+            <p class="animated fadeInLeft">
+                ·根据Think-loud Pilot Study, 我们总结了三种用户心理表达范式
+                (Same Feature Requirement Comparison相同能力需求强度比较，
+                Different Feature Requirement Comparison不同能力需求强度比较，
+                Unique Feature Requirement Identification特定能力是否被需求)，
+                并提出了一个用户判断AI执行其指令能否成功概率的心理模型：
+                <br />
+            </p>
+        </h2>
+        <h3 class = "text-left">
+            <p class="animated fadeInLeft">
+                当需要判断AI助手是否可以完成当前任务时，用户会考虑
+                关于当前任务需要哪些特征能力的先验评估。
+                然后，用户将检查
+                根据已知人物提供的证据所揭示的这些特征能力和当前任务是否存在及其程度强弱。
+                后验评估包括推理，形成用户对能力的最终评价。
+            </p>
+        </h3>
+
+
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project1/MT3.png" alt="">
+                    <!-- <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >底盘与外壳进行组装<br /></a></h4>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <h2 class = "text-left">
+            <p class="animated fadeInLeft">
+                ·根据Pilot Study的结果，我们设计了一个三层的特征树来描述AI助手完成指令所需的各种功能
+                <br />
+            </p>
+        </h2>
+
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project1/MT4.png" alt="">
+                    <!-- <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >底盘与外壳进行组装<br /></a></h4>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <h2 class = "text-left">
+            <p class="animated fadeInLeft">
+                ·通过搭建在线平台网络问卷，我们开启了正式实验，并且在收集数据后通过人工检查对比预先标注来筛选数据的方式进行质量控制
+                <br /><br /><br /><br />
+            </p>
+        </h2>
+
+
+
+        <div class="row">
+            <div class="col-md-12 col-sm-12 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project1/MT5.png" alt="">
+                    <!-- <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >底盘与外壳进行组装<br /></a></h4>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <h2 class = "text-left">
+            <p class="animated fadeInLeft">
+                ·得到数据后，通过设置贝叶斯分层模型进行训练；
+                <br /><br />
+                ·当处理未知场景时，首先根据认知场景与用户的相似度从训练集中检索相关记录；
+                根据整体相似性，将加权的原始评分和think aloud语义作为推理来源。
+                最后，将这些认知过程的推断元素输入到从训练集中训练的分层贝叶斯模型中，以获得预测。
+            </p>
+        </h2>
+
+        <h3 class = "text-left">
+            <p class="animated fadeInLeft">
+                ·同时，我们使用了LLM和MLP作为对比参照的方法处理相同任务，最终在贝叶斯分层模型上得到更好的结果。
+                <br />
+            </p>
+        </h3>
+        
+    
+    </div>
+    
+</div>
+
+<div id="menu-container">
+    <div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br /><br /><br /><br />
+    </div>
+</div>
+
+
+<!-- 原文链接 -->
+<!-- <div class="projects-header">
+    <h3 class="animated fadeInRight">
+        <div class = "container">
+            <div class="col-md-10 col-md-offset-1">
+                <h2 class="welcome-title animated fadeInLeft">
+                    实战展示
+                </h2> 
+            </div>
+        </div>
+    </h3>
+</div>
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+
+        <div class="projects-holder">
+            <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="project-item">
+                    <video width="100%" height="auto" controls>
+                        <source src="contents/Project2/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div id="menu-container">
+    <div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+        <br /><br /><br /><br /><br />
+    </div>
+</div> -->
+
+
+
+<footer>
+    <div class="blog-header text-center">
+	<div class="row">
+		<div class="navigation__item">
+            <p><a href="../index.html">回到列表</a></p>
+			<!-- <p>Copyright &copy; 2020&nbsp;&nbsp;Company By&nbsp;&nbsp;<a href="https://www.oyyandwjw.xyz/">Chien_W</a>&nbsp;&nbsp;&nbsp;&nbsp;</p> -->
+		</div>
+	</div>
+</div>
+</footer>
+<!-- templatemo 421 raleway -->
+<span class="border-top"></span>
+<span class="border-left"></span>
+<span class="border-right"></span>
+<span class="border-bottom"></span>
+    <!-- 网易云音乐 -->
+    <!-- <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0 src="//music.163.com/outchain/player?type=0&id=4950890732&auto=1&height=0"></embed> -->
+</body>
+</html>

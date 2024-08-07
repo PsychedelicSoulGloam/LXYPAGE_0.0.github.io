@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>龛龛：民俗宗教视野下的新型数字桌宠</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="icon" href="./picture/icon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--End-->
+    <script>
+    fetch('https://v1.hitokoto.cn')
+        .then(function (res){
+        return res.json();
+        })
+        .then(function (data) {
+        var hitokoto = document.getElementById('hitokoto');
+        hitokoto.innerText = data.hitokoto;
+        })
+        .catch(function (err) {
+        console.error(err);
+        })
+    </script>
+
+</head>
+
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+<!--这里是上方的留白，万一以后想加个导航什么的呢。。。。-->
+<header class="site-header container animated fadeInDown">
+	<div class="header-wrapper"></div>
+</header>
+
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+		<div class="home-intro text-center">
+			<h2 class="welcome-title animated fadeInLeft">
+                龛龛
+                <p>民俗宗教视野下的新型数字桌宠<br/>
+                </p>
+            </h2>
+			<p class="animated fadeInRight">
+                室内工作场景<br />
+                朴素民俗观念<br />
+                简洁交互完成心理调解<br />
+                都市打工人的打气助手
+            </p>
+		</div>
+    
+        <div class="projects-holder">
+        <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="project-item">
+                <video width="100%" height="auto" controls>
+                    <source src="contents/Project5/video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        </div>
+        <div style="border-bottom: 2px solid #46494f;"></div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- <div style="border-bottom: 2px solid #46494f;"></div> <br /> -->
+<!-- 用户分析 -->
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+        <div class="container">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="welcome-title animated fadeInLeft">
+                        用户分析
+                    </h2>
+                </div>
+        </div>
+</div>
+
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/CA1.jpg" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            职场压力与焦虑<br />                         
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 p-2 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/CA2.jpg" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            工作性抑郁<br />
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 p-3 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/CA3.jpg" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            各类解压产品的爆发<br />   
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4 p-4 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/CA4.jpg" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            “在上班和上进之间选择了上香”<br />
+                            temple walk的兴起<br />
+                            城市新形态社交活动的悄然更新<br />                         
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 p-5 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/CA5.jpg" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            占卜求签等“迷信”活动<br />
+                            现代都市人的心理安慰作用<br />
+                            成为一种潜在的消费方向和娱乐趋势<br />
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 p-6 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/CA6.jpg" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            占卜求签等“迷信”活动<br />
+                            现代都市人的心理安慰作用<br />
+                            成为一种潜在的消费方向和娱乐趋势<br />
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-3 p-7 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/CA7.jpg" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            传统民俗宗教<br />
+                            偶像崇拜文化<br />
+                            依然盛行<br />       
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-8 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/CA8.jpg" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            遗传中国乡土社会运作逻辑<br />     
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-9 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/CA9.jpg" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            保留历代传承朴素价值判断<br />  
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-10 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/CA10.jpg" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            作为文化遗产重要载体<br />
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="projects-header">
+    <br /><br /><br />
+    <h3 class="animated fadeInRight"></h3>
+    <div class = "row">
+        <div class = "col-md-4 col-md-offset-1 p-10 animated umScaleIn">
+            <div class = "project-item">
+                <img src = "contents/Project5/CA11.png" alt = "" style = "width:100% " class = "img-responsive">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip" >
+                    图像由智谱AI生成<br />                         
+                    </a></h4>
+                </div>
+            </div>
+        </div>
+        <div class = "col-md-6">
+            <h2 class = "text-left">
+                <p class="animated fadeInLeft">
+                    用户画像：
+                </p>
+            </h2>
+            <h3 class = "text-left">
+                <p class="animated fadeInLeft">
+                    王小哲&nbsp;&nbsp;&nbsp;&nbsp;♀&nbsp;&nbsp;&nbsp;&nbsp;28&nbsp;&nbsp;&nbsp;&nbsp;北京某互联网企业大厂员工<br />
+                    王小哲对于当代的各种令人疲惫的企业文化感到非常无力和压抑，但在日趋下行的就业环境下也不得不战战兢兢。
+                    但其实她对于汉服等等传统文化有着一定兴趣，也喜欢加入到网络temple walk的大军中去，
+                    却缺少时常出去走走的契机。
+                    另一方面，工作的的劳累又使得她感到亚健康状态的持续，工作期间不断需要一些身体和心理上的积极反馈。<br /><br />
+                    以王小哲为代表的人群————一部分20-40岁的都市白领，一方面，他们对于当代都市高压的职场环境和紧张的工作氛围感到非常不适，需要各种方法来对工作状态进行调节；
+                    另一方面，他们处在传统民俗复兴和娱乐化的趋势当中，对于传统文化在当代都市生活中的新业态有着较为浓厚的兴趣。
+                </p>
+            </h3>
+        </div>
+    </div>
+</div>
+
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+    </div>
+</div>
+
+<!-- 心里模型与角色架构 -->
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+        <div class="container">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="welcome-title animated fadeInLeft">
+                        <br /><br />
+                        心里建模与角色架构
+                    </h2>
+                </div>
+        </div>
+</div>
+
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+    <div class = "col-md-10 col-md-offset-1">
+        <h3 class = "text-left">
+            <p class="animated fadeInLeft">
+                已有较多的心理学研究成果粗略显示了职场情绪随着一周日程的周期性变化，对应的心理健康状态和工作效率也因此出现周期性的波动震荡：<br />
+            </p>
+        </h3>
+    </div>
+</div>
+
+<div class="projects-holder">
+    
+    <div class="row">
+        <div class="col-md-2 col-sm-2 p-1 col-md-offset-1 animated umScaleIn">
+            <div class="project-item">
+                <img src="contents/Project5/PA1.jpg" alt="">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip" >周一<br />萎靡不振</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 p-2 animated umScaleIn">
+            <div class="project-item">
+                <img src="contents/Project5/PA2.jpg" alt="">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip">周二<br />压力过大<br /></a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 p-3 animated umScaleIn">
+            <div class="project-item">
+                <img src="contents/Project5/PA3.jpg" alt="">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip" >周三<br />思维活跃</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 p-4 animated umScaleIn">
+            <div class="project-item">
+                <img src="contents/Project5/PA4.jpg" alt="">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip">周四<br />疲惫不堪</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 p-5 animated umScaleIn">
+            <div class="project-item">
+                <img src="contents/Project5/PA5.jpg" alt="">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip">周五<br />心浮气躁</a></h4>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="col-md-12 p-3">
+        <img src="contents/Project5/PC1.png" alt="" class="img-responsive">
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 col-sm-2 p-1 col-md-offset-1 animated umScaleIn">
+            <div class="project-item">
+                <img src="contents/Project5/PA6.png" alt="">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip" >MON.<br />铁拐李</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 p-2 animated umScaleIn">
+            <div class="project-item">
+                <img src="contents/Project5/PA7.png" alt="">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip">TUE.<br />文昌帝君<br /></a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 p-3 animated umScaleIn">
+            <div class="project-item">
+                <img src="contents/Project5/PA8.png" alt="">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip" >WED.<br />魁星</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 p-4 animated umScaleIn">
+            <div class="project-item">
+                <img src="contents/Project5/PA9.png" alt="">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip">THUR.<br />孙思邈</a></h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 p-5 animated umScaleIn">
+            <div class="project-item">
+                <img src="contents/Project5/PA10.png" alt="">
+                <div class="overlay">
+                    <h4><a class="tooltip-test" data-toggle="tooltip">FRI.<br />庄周</a></h4>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+</div>
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+        <div class = "col-md-10 col-md-offset-1">
+            <h3 class = "text-left">
+                <p class="animated fadeInLeft">
+                    基于数字桌宠的定位，我们设计了根据工作日进行轮回的机制，从民俗宗教故事中选择神祗人物进行轮值。
+                    （上图中五位为例）
+                    工作日从周一到周五，每一日均有不同的神祗形象与用户互动，周而复始。
+                    选择时避免纯粹的宗教人物，而注意人物的故事性和历史性，优先选择有真实历史原型或源于古代科学认知拟人化的形象。<br />
+                </p>
+            </h3>
+        </div>
+
+
+        <div class = "row">
+            <div class="col-md-6 col-sm-6 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/PA11.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >选择人物的另一依据是<br />其于当前工作日心态的适配度<br  />
+                            通过LLM训练其不同的言论风格和表达内容侧重<br />完成人格划分<br />
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 p-2 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/PA12.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >选择人物的另一依据是<br />其于当前工作日心态的适配度<br  />
+                            通过LLM训练其不同的言论风格和表达内容侧重<br />完成人格划分<br /></a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h3 class="animated fadeInRight"></h3>
+        <div class = "col-md-10 col-md-offset-1">
+            <h3 class = "text-left">
+                <p class="animated fadeInLeft">
+                    <br />
+                    各个神祗的人物形象基于年画、水陆画等等民间传统平面艺术形式取材，
+                    可以基于文物古画逐帧绘制做成视频，
+                    或者直接由AIGC模型通过图片生成视频，从而与用户完成信息传达<br />
+                </p>
+            </h3>
+        </div>
+
+        <div class = "row">
+            <div class="col-md-4 col-sm-4 col-md-offset-2  p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/PA13.jpg" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >通过可灵AI<br />简单模拟AIGC效果<br  /></a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <video width="100%" height="auto" controls>
+                        <source src="contents/Project5/PA14.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+        </div>
+
+</div>
+
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+    </div>
+</div>
+
+<!-- 交互形式和设计细节 -->
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+        <div class="container">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="welcome-title animated fadeInLeft">
+                        <br /><br />
+                        交互形式和设计细节
+                    </h2>
+                </div>
+        </div>
+</div>
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+    <div class = "col-md-10 col-md-offset-1">
+        <h2 class = "text-left">
+            <p class="animated fadeInLeft">
+                被动交互与主动交互<br />
+            </p>
+        </h2>
+        <h3 class = "text-left">
+            <p class="animated fadeInLeft">
+                考虑到工作场景，龛龛架设在手机或者iPad等有前置摄像头的小型电子设备上，通过摄像头获取信息，通过显示屏和声音给出反馈。
+                其中不需要用户主动参与的被动交互占主导；更不容易造成打扰的视觉（视频片段）互动占主导<br />
+            </p>
+        </h3>
+
+        <h2 class = "text-left">
+            <p class="animated fadeInLeft">
+                被动交互<br />
+            </p>
+        </h2>
+        <h3 class = "text-left">
+            <p class="animated fadeInLeft">
+                面部表情及生物信号识别情绪，为情绪识别设置结果分级阈值，达到一定阈值后设备自动触发相应交互。
+                通过AIGC训练生成不同的Agent，
+                从而在每次交互时得到符合情景但内容各异的文本或者声音信息。<br />
+            </p>
+        </h3>
+    </div>
+</div>
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+
+        <div class="row">
+            <div class="col-md-3 col-sm-3 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID1.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            被动交互1：<br />
+                            抽签<br />       
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-2 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID2.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            根据摄像识别结果<br />
+                            飘出一张签条或者木筹<br />     
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-3 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID3.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            用户关注到后<br />
+                            通过手势交互展开签条或者木筹<br />  
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-4 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID4.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            签筹通过LLM<br />
+                            生成心理疏导或者鼓励的文字<br />
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-3 p-5 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID5.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            被动交互2：<br />
+                            白乐音<br />       
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-6 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID6.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            根据摄像识别结果<br />
+                            飘出一种乐器<br />     
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-7 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID7.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            用户关注到后<br />
+                            通过手势交互示意演奏<br />  
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-8 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID8.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            设备发出非常简单的乐音<br />
+                            屏幕出现出现对应的歌词或者乐句<br />
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+    <div class = "col-md-10 col-md-offset-1">
+
+        <h2 class = "text-left">
+            <p class="animated fadeInLeft">
+                主动交互<br />
+            </p>
+        </h2>
+        <h3 class = "text-left">
+            <p class="animated fadeInLeft">
+                以较低概率随机时间触发互动。以下图周四情况为例：
+                当孙思邈离开后，其坐骑老虎值守。用户用手指点击小老虎的头，小老虎本来正在打盹被吵醒，生气地跳来跳去。
+                可以为单个坐骑对象设置多种反应方式。<br />
+            </p>
+        </h3>
+    </div>
+</div>
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+
+        <div class="row">
+            <div class="col-md-3 col-sm-3 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID9.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            按照一定的概率分布<br />
+                            随机出现神祗离开，其坐骑留守的情况<br /> 
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-2 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID10.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            用户关注到后<br />
+                            点击(攻击)屏幕上坐骑<br />  
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-3 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID11.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            触屏触发动画播放<br />
+                            完成交互<br />  
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-4 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID12.png" alt="">
+                    <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            触屏触发动画播放<br />
+                            完成交互<br />  
+                        </a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+    <div class = "col-md-10 col-md-offset-1">
+
+        <h2 class = "text-left">
+            <p class="animated fadeInLeft">
+                交互形式：容错性和自然映射建立提示<br />
+            </p>
+        </h2>
+        <h3 class = "text-left">
+            <p class="animated fadeInLeft">
+                手势交互中，为了提高对于手势识别的容错性和建立自然映射，
+                为用户设定了抓取物品的动作。
+                以签条为例，当一次“没抓到”时，签条会继续在“空中”飞舞并且逐渐出现越飞越远的迹象，疑似被风吹跑；
+                提示用户根据生活经验动作放大一些重新抓取。
+                <br />
+                以下从左至右为用户手部动作逐步放大对应交互情况的示意图。<br />
+            </p>
+        </h3>
+    </div>
+</div>
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+
+        <div class="row">
+            <div class="col-md-3 col-sm-3 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID13.png" alt="">
+                    <!-- <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            按照一定的概率分布<br />
+                            随机出现神祗离开，其坐骑留守的情况<br /> 
+                        </a></h4>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-2 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID14.png" alt="">
+                    <!-- <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            用户关注到后<br />
+                            点击(攻击)屏幕上坐骑<br />  
+                        </a></h4>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-3 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID15.png" alt="">
+                    <!-- <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            触屏触发动画播放<br />
+                            完成交互<br />  
+                        </a></h4>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-4 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID16.png" alt="">
+                    <!-- <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            触屏触发动画播放<br />
+                            完成交互<br />  
+                        </a></h4>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight"></h3>
+    <div class = "col-md-10 col-md-offset-1">
+
+        <h2 class = "text-left">
+            <p class="animated fadeInLeft">
+                交互形式：降低干扰<br />
+            </p>
+        </h2>
+        <h3 class = "text-left">
+            <p class="animated fadeInLeft">
+                整个交互过程中，考虑到工作场景，为了减小对于周边人及用户自身不必要的干扰，
+                声音是比较弱的一种反馈，可根据环境音量调节反馈音量，同时尽量简单旋律等等，
+                以求接近达到类似白噪音的效果。<br />
+            </p>
+        </h3>
+    </div>
+</div>
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+
+        <div class="row">
+            <div class="col-md-3 col-sm-3 p-1 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID17.png" alt="">
+                    <!-- <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            按照一定的概率分布<br />
+                            随机出现神祗离开，其坐骑留守的情况<br /> 
+                        </a></h4>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-2 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID18.png" alt="">
+                    <!-- <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            用户关注到后<br />
+                            点击(攻击)屏幕上坐骑<br />  
+                        </a></h4>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-3 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID19.png" alt="">
+                    <!-- <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            触屏触发动画播放<br />
+                            完成交互<br />  
+                        </a></h4>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-3 p-4 animated umScaleIn">
+                <div class="project-item">
+                    <img src="contents/Project5/ID20.png" alt="">
+                    <!-- <div class="overlay">
+                        <h4><a class="tooltip-test" data-toggle="tooltip" >
+                            触屏触发动画播放<br />
+                            完成交互<br />  
+                        </a></h4>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+
+        
+    </div>
+</div>
+
+
+
+<div class="projects-header">
+
+    <!-- <div class = "homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+    </div> -->
+
+    <div class="col-md-10 col-md-offset-1">
+        <h2 class="welcome-title animated fadeInLeft">
+            <br /><br />
+            后续改进
+        </h2>
+    
+        <h3 class = "text-left">
+            <p class="animated fadeInLeft">
+                ·时令信息，增强交互的“具时感”（节日期间的特殊着装或者季节性的装饰物）<br />
+                ·特定IP联动，如甘肃敦煌莫高窟/山西永乐宫/北京法海寺的风格皮肤<br />
+                ·神祗变动，满足更为私人化的需求（地域性的民俗人物为例，如天津王三奶奶，福建妈祖etc.）<br />
+                ·社区化的实验，用户联动，有限度地提高用户对于神祗的自定义性<br />
+                ·TO BE CONTINUED……<br />
+                <br />
+            </p>
+        </h3>
+    </div>
+
+    <div class = "homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+    </div>
+
+</div>
+
+
+<!-- <div class="projects-header">
+    <div class="col-md-10 col-md-offset-1">
+        <h2 class="welcome-title animated fadeInLeft">
+            <br /><br />
+            后续改进
+        </h2>
+    
+        <h3 class = "text-left">
+            <p class="animated fadeInLeft">
+                ·时令信息，增强交互的“具时感”（节日期间的特殊着装或者季节性的装饰物）<br />
+                ·特定IP联动，如甘肃敦煌莫高窟/山西永乐宫/北京法海寺的风格皮肤<br />
+                ·神祗变动，满足更为私人化的需求（地域性的民俗人物为例，如天津王三奶奶，福建妈祖etc.）<br />
+                ·社区化的实验，用户联动，有限度地提高用户对于神祗的自定义性<br />
+                ·TO BE CONTINUED……<br />
+                <br />
+            </p>
+        </h3>
+    </div>
+    
+</div> -->
+
+
+<div class="projects-header">
+    <div class = "homepage home-section container">
+        <div style="border-bottom: 2px solid #46494f;"></div>
+    </div>
+</div>
+
+
+<footer>
+    
+    <div class="blog-header text-center">
+        <div class="row">
+            <div class="navigation__item">
+                <br />
+                <p><a href="../index.html">回到列表</a></p>
+                <!-- <p>Copyright &copy; 2020&nbsp;&nbsp;Company By&nbsp;&nbsp;<a href="https://www.oyyandwjw.xyz/">Chien_W</a>&nbsp;&nbsp;&nbsp;&nbsp;</p> -->
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- templatemo 421 raleway -->
+<span class="border-top"></span>
+<span class="border-left"></span>
+<span class="border-right"></span>
+<span class="border-bottom"></span>
+    <!-- 网易云音乐 -->
+    <!-- <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0 src="//music.163.com/outchain/player?type=0&id=4950890732&auto=1&height=0"></embed> -->
+</body>
+</html>
