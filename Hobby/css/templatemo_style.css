@@ -565,9 +565,27 @@ span.offer-right {
 }
 
 .p-9 {
-    -moz-animation-delay: 4.2s;
-    -webkit-animation-delay: 4.2s;
-    animation-delay: 4.2s;
+    -moz-animation-delay: 4.1s;
+    -webkit-animation-delay: 4.1s;
+    animation-delay: 4.1s;
+}
+
+.p-10 {
+    -moz-animation-delay: 4.4s;
+    -webkit-animation-delay: 4.4s;
+    animation-delay: 4.4s;
+}
+
+.p-11 {
+    -moz-animation-delay: 4.7s;
+    -webkit-animation-delay: 4.7s;
+    animation-delay: 4.7s;
+}
+
+.p-12 {
+    -moz-animation-delay: 5.0s;
+    -webkit-animation-delay: 5.0s;
+    animation-delay: 5.0s;
 }
 
 .blog-posts {
